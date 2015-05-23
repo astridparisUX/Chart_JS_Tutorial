@@ -1,0 +1,143 @@
+// Color Variables
+$white: #fff;
+$blue: #3498db;
+$background: #ecf0f1;
+$light-gray: #bdc3c7;
+$gray: #7f8c8d;
+$dark-gray: #34495e;
+$darker-gray: #2c3e50;
+$light-teal: #4eddc1;
+$medium-teal: #1abc9c;
+$dark-teal: #0b9277;
+
+// Font Variables
+$headline-font: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+body {
+  font-family: $headline-font;
+  background: $background;
+}
+
+h1, h2, h3, h4, h5, h6, .panel h1, .panel h2, .panel h3, .panel h4, .panel h5, .panel h6 {
+  font-family: $headline-font;
+  font-weight:300;
+  color:$gray;
+}
+h1 {
+  font-weight: 100;
+  color:$dark-gray;
+}
+h2 {
+  font-size:1.2em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contain-to-grid {
+  background:$blue;
+  .top-bar {
+    background:$blue;
+    h1 a {
+      font-weight:700;
+    }
+  }
+}
+.top-bar-section li.active:not(.has-form) a:not(.button) {
+  background:darken( $blue, 10% );
+  font-family: $headline-font;
+  &:hover {
+    background:darken( $blue, 15% );
+  }
+}
+
+#profile {
+  margin-top:1em;
+  margin-bottom: 0;
+  .face {
+    img {
+      border-radius:50%;
+      border: 3px solid $white;
+      display:inline-block;
+      box-shadow: 0 2px 3px $light-gray;
+    }
+  }
+  h1 {
+    margin-bottom: 0;
+  }
+  p {
+    margin:0 0 .25em;
+    color:$gray;
+    font-weight:300;
+  }
+  ul {
+    list-style-type: none;
+    margin:.5em 0 0;
+    padding:0;
+    li {
+      display:inline;
+      background:$blue;
+      border-radius:4px;
+      padding:0.5em 1em;
+      font-size:0.75em;
+      margin-right: 0.5em;
+      a {
+        color:$white;
+        i {
+          margin-right:0.5em;
+        }
+      }
+    }
+  }
+}
+
+.panel {
+  background:$white;
+  border:none;
+  box-shadow: 0 2px 3px $light-gray;
+  margin:2em 0 0;
+  h3 {
+    position: relative;
+    top:-125px;
+    text-align: center;
+    margin:0 auto;
+    display:block;
+    font-size:2.15em;
+    height:0;
+    font-weight:900;
+    span {
+      display:block;
+      font-weight: 300;
+      font-size: 0.5em;
+      color:$gray!important;
+    }
+  }
+}
+.panel h3.week {
+  color:$light-teal;
+}
+.panel h3.month {
+  color:$medium-teal;
+}
+.panel h3.year {
+  color:$dark-teal;
+}
+
+.doughnut {
+  p {
+    text-align: center;
+    line-height: 1.4;
+    color:$gray;
+    font-weight: 300;
+  }
+}
+
+footer {
+  padding:2em 0 1em;
+  p {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.875em;
+    color:$gray;
+
+  }
+}
